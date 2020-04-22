@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>MS-Doc Parser App</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+    $(document).ready(function() { // this waits until the document is fully loaded
+    // Put custom logic here    
+});
+</script>
+</head>
+<script>
+  
+  saveData = function(data){
+    $.ajax({
+    type: 'POST',
+    url: 'http://localhost:3000/save',
+    data:data,
+    success:function(result){
+      alert(result)
+    }
+  });
+  }
+
+  </script>
+<body>
+      {{{body}}}
+</body>
+</html>
